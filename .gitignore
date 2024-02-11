@@ -1,0 +1,10 @@
+.bash_history
+.rustup
+.npm
+.cache
+.cargo
+.gnome
+.local
+.mozilla
+.ssh
+.viminfo
