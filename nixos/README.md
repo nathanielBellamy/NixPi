@@ -2,7 +2,8 @@
 
 ## NixOs Running on a Raspberry Pi 4B
 
-- This directory contains examples of all files that have been added and/or modified in order to get NixOs running on a Raspberry Pi 4B.
+- This directory contains examples of files that have been added and/or modified in order to get NixOs running on a Raspberry Pi 4B.
+- This is an ongoing project.
 
 ## WiFi
 - to get wifi working
@@ -12,10 +13,11 @@
 ```
 wpa_supplicant -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant.conf -d
 ```
-  - assuming everything goes ifine, start wpa_supplicant in the background
+  - assuming everything goes fine, start wpa_supplicant in the background
 ```
 wpa_supplicant -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant.conf -B
 ```
+  - see https://linux.die.net/man/8/wpa_supplicant
 
 ## LunarVim
 - we could not get the Nix package `lunarvim` to install (undefined variable error on rebuild)
