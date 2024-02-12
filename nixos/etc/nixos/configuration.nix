@@ -62,31 +62,45 @@
      packages = with pkgs; [
        firefox
        tree
+       
+       # nbsdsp
+       fftw
+       portaudio
+       libsndfile
      ];
    };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
    environment.systemPackages = with pkgs; [
-     tmux
-     ghc
-     ihp-new
+     # terminal
      git
-     lazygit
      gitui
+     lazygit
+     neovim
+     ripgrep
+     tmux
+     vim
+     wget
+ 
+     # compilers
+     ghc
      gcc13
      gnumake
-     ruby
-     go
-     nodePackages_latest.nodejs
-     rustup
+
+     # rust
      cargo
+     rustup
+    
+     # languages and frameworks
+     go
+     ruby
+     nodePackages_latest.nodejs
      python311Packages.pip
      python312
-     neovim
-     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-     ripgrep
-     wget
+
+     # frameworks
+     ihp-new
    ];
 
   # Some programs need SUID wrappers, can be configured further or are
