@@ -92,7 +92,7 @@
      cargo
      rustup
     
-     # languages and frameworks
+     # languages 
      go
      ruby
      nodePackages_latest.nodejs
